@@ -2,8 +2,27 @@
 <resources>
     <color name="red_500">#fc0303</color>
     <color name="red_700">#ff5959</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#ff5959</color>
+    <color name="teal_700">#fc0303</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="poison">#B87FC9</color>
+    <color name="eletric">#EED534</color>
+    <color name="ground">#F4E7DB</color>
+    <color name="fairy">#FDB9E9</color>
+    <color name="fire">#FD7D24</color>
+    <color name="normal">#A5ADB0</color>
+    <color name="grass">#9ACC50</color>
+    <color name="bug">#739F40</color>
+    <color name="water">#4492C3</color>
+    <color name="fighting">#D56623</color>
+    <color name="psychic">#F366B9</color>
+    <color name="rock">#A38D21</color>
+    <color name="ghost">#7A62A3</color>
+    <color name="ice">#51C4E7</color>
+    <color name="dark">#343739</color>
+    <color name="dragon">#98B2E6</color>
+    <color name="steel">#9EB7B8</color>
 </resources>

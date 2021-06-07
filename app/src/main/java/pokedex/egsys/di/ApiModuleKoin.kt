@@ -2,7 +2,6 @@ package pokedex.egsys.di
 
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
-import pokedex.egsys.features.details.model.DetailsViewModel
 import pokedex.egsys.features.home.model.HomeViewModel
 import pokedex.egsys.model.client.ClientService
 import pokedex.egsys.model.repository.PokemonRepository
@@ -20,12 +19,6 @@ object ApiModuleKoin {
     private val viewModelModule = module {
         viewModel {
             HomeViewModel(
-                get()
-            )
-        }
-
-        viewModel {
-            DetailsViewModel(
                 get()
             )
         }

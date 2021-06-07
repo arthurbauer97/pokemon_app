@@ -6,11 +6,11 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="190dp"
+        android:id="@+id/cardPokemon"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        app:cardBackgroundColor="#9720FFB1"
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,41 +19,53 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="10dp">
 
-            <ImageView
-                android:id="@+id/iv_photo"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_transparent"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_name"
-                app:srcCompat="@drawable/pokedex" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pokedex" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_semibold"
                 android:text="TextView"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
             <TextView
                 android:id="@+id/tv_weight"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
-                android:text="TextView"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans"
+                android:text="1111111111"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_type"
                 app:layout_constraintStart_toStartOf="@+id/tv_type"
                 app:layout_constraintTop_toBottomOf="@+id/tv_type" />
 
@@ -61,15 +73,14 @@
                 android:id="@+id/tv_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans_semibold"
                 android:text="TextView"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toTopOf="@+id/tv_weight"
-                app:layout_constraintEnd_toStartOf="@+id/iv_photo"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

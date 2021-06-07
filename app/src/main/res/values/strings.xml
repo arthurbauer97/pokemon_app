@@ -3,4 +3,9 @@
     <string name="home_fragment_label">Home Fragment</string>
     <string name="details_fragment_label">Details Fragment</string>
 
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="name">Nome</string>
+    <string name="type">Type</string>
+
 </resources>

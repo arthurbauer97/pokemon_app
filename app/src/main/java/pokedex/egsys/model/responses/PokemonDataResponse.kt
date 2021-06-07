@@ -21,7 +21,6 @@ data class TypeX(
     val url: String
 )
 
-
 data class Sprites(
     val other: Other
 )
