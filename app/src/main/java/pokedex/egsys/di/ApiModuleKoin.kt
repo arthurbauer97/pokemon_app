@@ -2,10 +2,10 @@ package pokedex.egsys.di
 
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
-import pokedex.egsys.features.home.model.HomeViewModel
-import pokedex.egsys.model.client.ClientService
-import pokedex.egsys.model.repository.PokemonRepository
-import pokedex.egsys.model.service.PokemonService
+import pokedex.egsys.features.home.viewModel.HomeViewModel
+import pokedex.egsys.service.ClientService
+import pokedex.egsys.service.PokemonRepository
+import pokedex.egsys.service.PokemonService
 
 object ApiModuleKoin {
 

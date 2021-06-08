@@ -1,4 +1,4 @@
-package pokedex.egsys.features.home
+package pokedex.egsys.features.home.listener
 
 import pokedex.egsys.model.responses.PokemonDataResponse
 

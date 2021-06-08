@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import coil.load
-import pokedex.egsys.PokemonDetails
+import pokedex.egsys.model.PokemonDetails
 import pokedex.egsys.R
 import pokedex.egsys.databinding.FragmentDetailsBinding
 

@@ -10,9 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.google.android.material.card.MaterialCardView
-import pokedex.egsys.PokemonDetails
 import pokedex.egsys.R
-import pokedex.egsys.features.home.PokemonClickListener
+import pokedex.egsys.features.home.listener.PokemonClickListener
 import pokedex.egsys.model.responses.PokemonDataResponse
 
 class HomePokemonsAdapter(

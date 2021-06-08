@@ -1,9 +1,8 @@
-package pokedex.egsys.model.client
+package pokedex.egsys.service
 
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import pokedex.egsys.model.service.PokemonService
 import pokedex.egsys.utils.Constants
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -6,18 +6,16 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import kotlinx.coroutines.Job
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import pokedex.egsys.PokemonDetails
+import pokedex.egsys.model.PokemonDetails
 import pokedex.egsys.R
 import pokedex.egsys.databinding.FragmentHomeBinding
-import pokedex.egsys.features.home.PokemonClickListener
-import pokedex.egsys.features.home.model.HomeViewModel
+import pokedex.egsys.features.home.listener.PokemonClickListener
+import pokedex.egsys.features.home.viewModel.HomeViewModel
 import pokedex.egsys.model.responses.PokemonDataResponse
 
 class HomeFragment : Fragment(), PokemonClickListener {
