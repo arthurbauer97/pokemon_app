@@ -12,7 +12,7 @@ import coil.load
 import com.google.android.material.card.MaterialCardView
 import pokedex.egsys.R
 import pokedex.egsys.features.home.listener.PokemonClickListener
-import pokedex.egsys.model.responses.PokemonDataResponse
+import pokedex.egsys.model.PokemonDataResponse
 
 class HomePokemonsAdapter(
     var pokemons: List<PokemonDataResponse>,
@@ -37,8 +37,17 @@ class HomePokemonsAdapter(
 
         holder.name.text = pokemon.name.capitalize()
         holder.type.text = pokemon.types.first().type.name.capitalize()
-        holder.photo.load(pokemon.sprites.other.photo.front_default)
 
+        if (pokemon.sprites.other.photo.front_default.isNullOrEmpty()) {
+            holder.photo.setImageDrawable(
+                ContextCompat.getDrawable(
+                    context,
+                    R.drawable.pokeball
+                )
+            )
+        } else {
+            holder.photo.load(pokemon.sprites.other.photo.front_default)
+        }
         //logica do peso
         var peso = pokemon.weight.toString()
         if (pokemon.weight.toString().length > 1) {
@@ -49,6 +58,7 @@ class HomePokemonsAdapter(
         holder.weight.text = "$peso kg"
 
 
+
         colors(holder, pokemon.types[0].type.name, context)
 
         holder.cardPokemon.setOnClickListener {
@@ -56,7 +66,6 @@ class HomePokemonsAdapter(
         }
 
     }
-
 
     class PokemonViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val name: TextView

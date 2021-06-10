@@ -21,7 +21,6 @@ class ClientService {
             .addInterceptor { chain ->
                 val request = chain.request()
                     .newBuilder()
-                    //.addHeader("X-Auth-Token", getCurrentUser()?.token ?: "")
                     .build()
                 chain.proceed(request)
             }

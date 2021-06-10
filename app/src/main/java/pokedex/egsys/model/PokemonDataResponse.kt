@@ -1,4 +1,4 @@
-package pokedex.egsys.model.responses
+package pokedex.egsys.model
 
 import com.google.gson.annotations.SerializedName
 
