@@ -1,7 +1,7 @@
 package pokedex.egsys.service
 
+import pokedex.egsys.model.PokemonDataResponse
 import pokedex.egsys.model.PokemonNameResponse
-import pokedex.egsys.model.responses.PokemonDataResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
