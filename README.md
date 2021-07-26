@@ -16,9 +16,9 @@
 
 ##### Android Jetpack
 ```
-* [Material Design] - Biblioteca utilizada para o layout utilizando o Guia do Material Design.
-* [Navigation] - Biblioteca utilizada para navegação.
-* [Koin] - Biblioteca para injeção de dependências.
+[Material Design] - Biblioteca utilizada para o layout utilizando o Guia do Material Design.
+[Navigation] - Biblioteca utilizada para navegação.
+[Koin] - Biblioteca para injeção de dependências.
 ```
 
 ## Imagens
